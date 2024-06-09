@@ -1,5 +1,3 @@
-version: '3.1'
-
 services:
   postgres:
     image: postgres:latest
@@ -8,5 +6,6 @@ services:
       POSTGRES_USER: joao
       POSTGRES_PASSWORD: ""
       POSTGRES_DB: delivery
+      POSTGRES_HOST_AUTH_METHOD: trust
     ports:
       - "5432:5432"
